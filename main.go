@@ -141,7 +141,7 @@ func main() {
 	mux.HandleFunc("/", indexHandler)
 	mux.HandleFunc("/upload", uploadHandler)
 
-	if err := http.ListenAndServe(":4500", mux); err != nil {
+	if err := http.ListenAndServe(":3000", mux); err != nil {
 		log.Fatal(err)
 	}
 }
